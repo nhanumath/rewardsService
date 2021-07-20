@@ -1,11 +1,7 @@
 package com.charter.rewardsService.controller;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.Set;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -45,7 +41,7 @@ public class RewardsController {
 	}
 
 	
-	@GetMapping("/findAllCustomerRewards/{id}")
+	@GetMapping("/findAllCustomerRewards")
 	public List<RewardRepsponseVO> calculateRewardPerMonth() {
 		
 		ResponseEntity<CustomerTransaction[]> response =
